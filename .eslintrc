@@ -1,0 +1,87 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "eslint-plugin-tsdoc"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jest/recommended",
+    "plugin:jest/style",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-inferrable-types": [
+      "warn",
+      {
+        "ignoreParameters": true
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/member-delimiter-style": [
+      "error",
+      {
+        "multiline": {
+          "delimiter": "none",
+          "requireLast": false
+        },
+        "singleline": {
+          "delimiter": "comma",
+          "requireLast": false
+        }
+      }
+    ],
+    "tsdoc/syntax": "warn",
+    "jest/consistent-test-it": "error",
+    "jest/lowercase-name": [
+      "error",
+      {
+        "allowedPrefixes": [
+          "Firebase"
+        ]
+      }
+    ],
+    "jest/no-duplicate-hooks": "error",
+    "jest/no-expect-resolves": "error",
+    "jest/no-if": "error",
+    "jest/no-large-snapshots": [
+      "error",
+      {
+        "maxSize": 12,
+        "inlineMaxSize": 6,
+        "whitelistedSnapshots": {}
+      }
+    ],
+    "jest/no-test-return-statement": "error",
+    "jest/no-truthy-falsy": "error",
+    "jest/prefer-called-with": "error",
+    "jest/prefer-expect-assertions": "off",
+    "jest/prefer-hooks-on-top": "error",
+    "jest/prefer-spy-on": "error",
+    "jest/prefer-strict-equal": "error",
+    "jest/prefer-todo": "error",
+    "jest/require-top-level-describe": "error",
+    "jest/valid-title": "error"
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/*.{j,t}s?(x)",
+        "**/tests/**/*.{test|spec}.{j,t}s?(x)"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}
