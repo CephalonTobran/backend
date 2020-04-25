@@ -1,6 +1,6 @@
 {
   "name": "cephalon-tobran-backend",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "description": "Manage the behind-the-scenes aspects of Cephalon Tobran.",
   "main": "\\src\\main.ts",
   "keywords": [
@@ -22,7 +22,7 @@
     "test:watch": "majestic",
     "lint": "eslint \"**/*.{js,ts}\" --quiet --fix",
     "lint:ci": "eslint \"**/*.{js,ts}\" --color",
-    "release": "standard-version"
+    "release": "semantic-release"
   },
   "dependencies": {
     "@firebase/app-types": "^0.6.0",
@@ -50,6 +50,7 @@
     "@typescript-eslint/eslint-plugin": "^2.29.0",
     "@typescript-eslint/parser": "^2.29.0",
     "commitizen": "^4.0.4",
+    "conventional-changelog-conventionalcommits": "^4.2.3",
     "cz-conventional-changelog": "^3.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
@@ -63,7 +64,7 @@
     "jest-extended": "^0.11.5",
     "majestic": "^1.6.2",
     "prettier": "^2.0.5",
-    "standard-version": "^7.1.0",
+    "semantic-release": "^17.0.7",
     "ts-jest": "^25.4.0"
   },
   "husky": {
