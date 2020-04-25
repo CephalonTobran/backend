@@ -4,7 +4,9 @@
 
 [![license-badge]][license] [![release-badge]][release] [![release-date-badge]][release] [![testing-status-badge]][testing-status]
 
-[![semantic-versioning-badge]](semantic-versioning) [![conventional-commits-badge]](conventional-commits) [![commitizen-badge]](commitizen)
+[![semantic-versioning-badge]](semantic-versioning) [![conventional-commits-badge]](conventional-commits)
+
+[![commitizen-badge]](commitizen) [![semantic-release-badge]](semantic-release)
 
 ## Description
 
@@ -37,5 +39,7 @@ This project is licensed under the terms of the [MIT license][license].
 [semantic-versioning-badge]: https://img.shields.io/badge/Semantic%20Versioning-2.0.0-informational.svg?style=for-the-badge (Semantic versioning badge)
 [conventional-commits]: https://conventionalcommits.org (Conventional Commits)
 [conventional-commits-badge]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-informational.svg?style=for-the-badge (Conventional Commits badge)
+[semantic-release]: https://semantic-release.gitbook.io/ (semantic-release)
+[semantic-release-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=for-the-badge (semantic-release badge)
 [commitizen]: http://commitizen.github.io/cz-cli/ (Commitizen friendly)
 [commitizen-badge]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=for-the-badge (Commitizen friendly badge)

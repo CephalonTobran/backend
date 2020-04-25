@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+
+## [0.2.0](https://github.com/CephalonTobran/backend/compare/v0.1.0...v0.2.0) (2020-04-25)
+
+
+### Features
+
+* add tools for conventional commits ([#3](https://github.com/CephalonTobran/backend/issues/3)) ([d13c560](https://github.com/CephalonTobran/backend/commit/d13c56062b24a2ee264b79a3b8654efc278ffd6b))
+* semantic release ([#4](https://github.com/CephalonTobran/backend/issues/4)) ([f126a2e](https://github.com/CephalonTobran/backend/commit/f126a2ede07366e641cf0b7e717165cd7712d9ef))
+
+
 ## 0.1.0 (2020-04-24)
 
 ### Features
