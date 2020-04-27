@@ -4,7 +4,7 @@
 module.exports = {
   setupFilesAfterEnv: ["jest-extended", "expect-more-jest", "jest-chain"],
   preset: "ts-jest",
-  coverageDirectory: "coverage",
+  coverageDirectory: "reports/coverage",
   errorOnDeprecated: true,
   testEnvironment: "node",
   moduleNameMapper: {

@@ -63,6 +63,7 @@
     "jest": "^25.4.0",
     "jest-chain": "^1.1.5",
     "jest-extended": "^0.11.5",
+    "jest-junit": "^10.0.0",
     "majestic": "^1.6.2",
     "prettier": "^2.0.5",
     "semantic-release": "^17.0.7",

@@ -1,0 +1,31 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/node:12.16
+    steps:
+      - checkout
+      - restore_cache:
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
+      - run:
+          name: "Install Dependencies"
+          command: yarn install
+      - save_cache:
+          key: v1-dependencies-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: "Lint with ESLINT"
+          command: yarn lint:ci -- --format junit -o reports/junit/eslint.xml
+      - run:
+          name: "Test with Jest"
+          command: yarn test --ci --runInBand --collectCoverage --reporters=default --reporters=jest-junit
+          environment:
+            JEST_JUNIT_ADD_FILE_ATTRIBUTE: "true"
+            JEST_JUNIT_OUTPUT_NAME: "./reports/junit/jest.xml"
+            JEST_SUITE_NAME: "Jest Tests"
+      - store_artifacts:
+          path: reports/
+          prefix: test
+      - store_test_results:
+          path: reports/junit

@@ -34,5 +34,6 @@ ehthumbs.db
 # Built ts files
 dist/**/*
 
-# Test coverage
-coverage/
+# Testing results
+reports/
+junit.xml
