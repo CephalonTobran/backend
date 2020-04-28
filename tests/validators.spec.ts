@@ -29,10 +29,10 @@ describe("string cleaner", () => {
     expect(testResult).toBe(expectedOutput)
   })
 
-  it("throws an error if the result is empty", () => {
+  it("throws an error if the result is required and is empty", () => {
     const input =
       '  <br /> <script src="invader.com/explode.js">explode()</script> \n'
-    expect(() => cleanString(input)).toThrow()
+    expect(() => cleanString(input, "input", true)).toThrow()
   })
 })
 
@@ -72,7 +72,7 @@ describe("field validator", () => {
 
   it("for a category returns a clean category", () => {
     const input = "  <b><i>Category</i></b>  \n\n\n"
-    const expectedOutput = "other"
+    const expectedOutput = "Unknown"
     const testResult = validCategory(input)
     expect(testResult).toBe(expectedOutput)
   })

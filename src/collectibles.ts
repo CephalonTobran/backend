@@ -43,7 +43,7 @@ export interface Collectible {
 /**
  * Types of Collectibles
  */
-export type CollectibleCategory = "Warframe" | "Other"
+export type CollectibleCategory = "Warframe" | "Unknown"
 
 /**
  * Convert a warframe-items Item object to a Collectible object

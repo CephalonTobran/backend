@@ -29,11 +29,15 @@ export function devoidOfContent(input: string): boolean {
  *
  * @param field - If an error is thrown, the field name is used in the error message.
  */
-export function cleanString(input: string, field: string = "unknown"): string {
+export function cleanString(
+  input: string,
+  field: string = "unknown",
+  required: boolean = false
+): string {
   input = DOMPurify.sanitize(input)
   input = stripLow(input)
   input = trim(input)
-  if (devoidOfContent(input))
+  if (required && devoidOfContent(input))
     throw new Error(
       `The required field "${field}" was not provided or cleaned up to an empty state.`
     )
@@ -44,7 +48,7 @@ export function cleanString(input: string, field: string = "unknown"): string {
  * Validates the collectible's id for the database
  */
 export function validID(id: string): string {
-  id = cleanString(id, "id")
+  id = cleanString(id, "id", true)
   id = kebabCase(id)
   return id
 }
@@ -53,7 +57,7 @@ export function validID(id: string): string {
  * Validates the collectible's unique name
  */
 export function validUniqueName(uniqueName: string): string {
-  uniqueName = cleanString(uniqueName, "uniqueName")
+  uniqueName = cleanString(uniqueName, "uniqueName", true)
   return uniqueName
 }
 
@@ -61,7 +65,7 @@ export function validUniqueName(uniqueName: string): string {
  * Validates the collectible's name
  */
 export function validName(name: string): string {
-  name = cleanString(name, "name")
+  name = cleanString(name, "name", true)
   return name
 }
 
@@ -72,7 +76,7 @@ export function validCategory(category: string): CollectibleCategory {
   category = cleanString(category, "category")
 
   if (category === "Warframes") category = "Warframe"
-  else category = "other"
+  else category = "Unknown"
 
   return category as CollectibleCategory
 }
@@ -81,7 +85,7 @@ export function validCategory(category: string): CollectibleCategory {
  * Validates the collectible's description
  */
 export function validDescription(description: string): string {
-  description = cleanString(description, "description")
+  description = cleanString(description, "description", false)
   return description
 }
 
@@ -89,7 +93,7 @@ export function validDescription(description: string): string {
  * Validates the collectible's description
  */
 export function validImage(image: string): string {
-  image = cleanString(image, "image")
+  image = cleanString(image, "image", true)
   // eslint-disable-next-line no-control-regex
   if (matches(image, /[<>:"/\\|?*\x00-\x1F]/g)) return ""
 
@@ -112,7 +116,7 @@ export function validImage(image: string): string {
  */
 export function validMasteryRank(MR: number): number {
   MR = Math.floor(Number(MR))
-  if (MR < 0) return 0
+  if (MR < 0 || isNaN(MR)) return 0
   else if (MR > 30) return 30
   else return MR
 }
@@ -123,7 +127,8 @@ export function validMasteryRank(MR: number): number {
  * @returns Returns a sort-friendly number. E.g.: 12000000 or 12002000 or 12002005
  */
 export function validVersion(version: string): number {
-  version = cleanString(version, "introduced")
+  version = cleanString(version, "introduced", false)
+
   const semVer = semverCoerce(version, {
     loose: false,
     includePrerelease: false,
