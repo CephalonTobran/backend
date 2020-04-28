@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.3.1](https://github.com/CephalonTobran/backend/compare/v0.3.0...v0.3.1) (2020-04-28)
+
+
+### Bug Fixes
+
+* semantic-release not updating files ([#14](https://github.com/CephalonTobran/backend/issues/14)) ([cbdcc76](https://github.com/CephalonTobran/backend/commit/cbdcc76a196c26835e269f077cbdd5e1e8fca893)), closes [#7](https://github.com/CephalonTobran/backend/issues/7) [#6](https://github.com/CephalonTobran/backend/issues/6)
+
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 
