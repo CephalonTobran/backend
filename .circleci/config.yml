@@ -16,7 +16,7 @@ jobs:
             - ./node_modules
       - run:
           name: "Lint with ESLINT"
-          command: yarn lint:ci -- --format junit -o reports/junit/eslint.xml
+          command: yarn lint:ci --format junit -o reports/junit/eslint.xml
       - run:
           name: "Test with Jest"
           command: yarn test --ci --runInBand --collectCoverage --reporters=default --reporters=jest-junit
