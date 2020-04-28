@@ -25,9 +25,9 @@
     }
   },
   "include": [
-    "src/jsdom.d.ts",
+    "src/lib/jsdom.d.ts",
     "src/**/*.ts",
-    "tests/**/*.ts",
+    "tests/**/*.ts"
   ],
   "exclude": [
     "node_modules"

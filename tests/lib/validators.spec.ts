@@ -11,7 +11,7 @@ import {
   validVersion,
   validWikiURL,
   validVaultedStatus,
-} from "@/validators"
+} from "@/lib/validators"
 
 describe("string cleaner", () => {
   it("filters out HTML tags", () => {

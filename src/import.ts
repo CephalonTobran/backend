@@ -10,10 +10,10 @@ import {
   displayInfo,
   loadEnvironmentVariables,
   FirebaseServiceAccount,
-} from "./functions"
+} from "./lib/functions"
 import * as admin from "firebase-admin"
 import WarframeItems from "warframe-items"
-import { convertItemToCollectible } from "./collectibles"
+import { convertItemToCollectible, Collectible } from "./lib/collectibles"
 
 process.on("uncaughtException", (error) => {
   displayError("There was an uncaught error", error.message)

@@ -1,4 +1,4 @@
-import { FirebaseServiceAccount } from "@/functions"
+import { FirebaseServiceAccount } from "@/lib/functions"
 
 describe("Firebase service account key collector", () => {
   it("accept a base64 encoded string and return a JSON string", () => {

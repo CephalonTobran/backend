@@ -1,4 +1,4 @@
-import { Collectible, convertItemToCollectible } from "@/collectibles"
+import { Collectible, convertItemToCollectible } from "@/lib/collectibles"
 import { Item } from "warframe-items"
 
 describe("collectible object converter", () => {
