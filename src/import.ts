@@ -46,9 +46,15 @@ displayInfo("Beginning warframe import...")
 const warframeItemList = new WarframeItems({ category: ["Warframes"] })
 
 let warframeImportCount = 0
+let warframeImportFailureCount = 0
 
 for (const warframeItem of warframeItemList) {
-  const warframeCollectible = convertItemToCollectible(warframeItem)
+  let warframeCollectible: Collectible
+  try {
+    warframeCollectible = convertItemToCollectible(warframeItem)
+  } catch (error) {
+    warframeImportFailureCount++
+  }
 
   const collectibleDBRef = database
     .collection("warframes")
@@ -62,6 +68,12 @@ databaseBatch
   .commit()
   .then(() => {
     displayInfo(`Successfully imported ${warframeImportCount} warframes.`)
+
+    if (warframeImportFailureCount > 0) {
+      displayError(
+        `Failed to imported ${warframeImportFailureCount} warframes.`
+      )
+    }
   })
   .catch((error) => {
     displayFatalError("Failed to save any warframes.", error)
