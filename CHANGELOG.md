@@ -1,6 +1,18 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+See [Conventional Commits](https: //www.conventionalcommits.org/) for commit guidelines.
+
+### [0.3.2](https://github.com/CephalonTobran/backend/compare/v0.3.1...v0.3.2) (2020-04-28)
+
+
+### Bug Fixes
+
+* **release:** changelog header includes description ([#17](https://github.com/CephalonTobran/backend/issues/17)) ([0d1e0a8](https://github.com/CephalonTobran/backend/commit/0d1e0a81c92152e94d86a9b722940bd02db1bb2b))
+
+# Changelog
+
+All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
 
