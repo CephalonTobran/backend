@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+### [0.3.3](https://github.com/CephalonTobran/backend/compare/v0.3.2...v0.3.3) (2020-04-28)
+
+
+### Bug Fixes
+
+* **release:** link in changelog ([#19](https://github.com/CephalonTobran/backend/issues/19)) ([d41edd8](https://github.com/CephalonTobran/backend/commit/d41edd83ad08f43189885b60052d723e2fb32729)), closes [#18](https://github.com/CephalonTobran/backend/issues/18)
+
 ### [0.3.2](https://github.com/CephalonTobran/backend/compare/v0.3.1...v0.3.2) (2020-04-28)
 
 
