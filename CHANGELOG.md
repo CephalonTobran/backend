@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 
+## [0.3.0](https://github.com/CephalonTobran/backend/compare/v0.2.1...v0.3.0) (2020-04-27)
+
+
+### Features
+
+* add CircleCI pipeline ([#9](https://github.com/CephalonTobran/backend/issues/9)) ([a3e43df](https://github.com/CephalonTobran/backend/commit/a3e43df10349c3e25458369a7f0a7667723a5599))
+
+
+### [0.2.1](https://github.com/CephalonTobran/backend/compare/v0.2.0...v0.2.1) (2020-04-25)
+
+
+### Bug Fixes
+
+* changelog not automatically updating ([#5](https://github.com/CephalonTobran/backend/issues/5)) ([8723e7e](https://github.com/CephalonTobran/backend/commit/8723e7e1d43dae46f91c72d6b95483a4528156e8))
+
+
 ## [0.2.0](https://github.com/CephalonTobran/backend/compare/v0.1.0...v0.2.0) (2020-04-25)
 
 

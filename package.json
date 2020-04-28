@@ -1,6 +1,6 @@
 {
   "name": "cephalon-tobran-backend",
-  "version": "0.0.0-development",
+  "version": "0.3.0",
   "description": "Manage the behind-the-scenes aspects of Cephalon Tobran.",
   "main": "\\src\\main.ts",
   "keywords": [
@@ -47,11 +47,13 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "@types/jest": "^25.2.1",
     "@typescript-eslint/eslint-plugin": "^2.29.0",
     "@typescript-eslint/parser": "^2.29.0",
     "commitizen": "^4.0.4",
     "conventional-changelog-conventionalcommits": "^4.2.3",
+    "cross-env": "^7.0.2",
     "cz-conventional-changelog": "^3.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
