@@ -1,12 +1,12 @@
-import { CollectibleCategory } from "./collectibles"
 import createDOMPurify from "dompurify"
 import { JSDOM } from "jsdom"
 import kebabCase from "lodash/kebabCase"
 import semverCoerce from "semver/functions/coerce"
 import isURL from "validator/lib/isURL"
+import matches from "validator/lib/matches"
 import stripLow from "validator/lib/stripLow"
 import trim from "validator/lib/trim"
-import matches from "validator/lib/matches"
+import { CollectibleCategory } from "./collectibles"
 
 const window = new JSDOM("").window
 const DOMPurify = createDOMPurify(window)

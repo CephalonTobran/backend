@@ -4,6 +4,9 @@
  * Licensed under MIT (https://github.com/CephalonTobran/backend/blob/master/LICENSE)
  */
 
+import * as admin from "firebase-admin"
+import WarframeItems from "warframe-items"
+import { convertItemToCollectible, Collectible } from "./lib/collectibles"
 import {
   displayError,
   displayFatalError,
@@ -11,9 +14,6 @@ import {
   loadEnvironmentVariables,
   FirebaseServiceAccount,
 } from "./lib/functions"
-import * as admin from "firebase-admin"
-import WarframeItems from "warframe-items"
-import { convertItemToCollectible, Collectible } from "./lib/collectibles"
 
 process.on("uncaughtException", (error) => {
   displayError("There was an uncaught error", error.message)

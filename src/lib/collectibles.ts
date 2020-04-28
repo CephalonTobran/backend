@@ -1,3 +1,4 @@
+import { Item } from "warframe-items"
 import {
   validID,
   validUniqueName,
@@ -10,7 +11,6 @@ import {
   validWikiURL,
   validVaultedStatus,
 } from "./validators"
-import { Item } from "warframe-items"
 
 /**
  * Database document data.

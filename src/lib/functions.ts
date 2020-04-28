@@ -1,5 +1,5 @@
-import dotenv from "dotenv"
 import chalk from "chalk"
+import dotenv from "dotenv"
 import isBase64 from "validator/lib/isBase64"
 
 /**
