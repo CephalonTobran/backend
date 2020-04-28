@@ -1,5 +1,3 @@
-/dist
-
 # Dependency directories
 node_modules/
 
@@ -30,9 +28,6 @@ ehthumbs.db
 # Firebase
 .firebaserc
 .firebase/
-
-# Built ts files
-dist/**/*
 
 # Testing results
 reports/
