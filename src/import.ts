@@ -56,9 +56,7 @@ for (const warframeItem of warframeItemList) {
     warframeImportFailureCount++
   }
 
-  const collectibleDBRef = database
-    .collection("warframes")
-    .doc(warframeCollectible.databaseID)
+  const collectibleDBRef = database.collection("warframes").doc(warframeCollectible.databaseID)
   databaseBatch.set(collectibleDBRef, warframeCollectible, { merge: true })
 
   warframeImportCount++
@@ -70,9 +68,7 @@ databaseBatch
     displayInfo(`Successfully imported ${warframeImportCount} warframes.`)
 
     if (warframeImportFailureCount > 0) {
-      displayError(
-        `Failed to imported ${warframeImportFailureCount} warframes.`
-      )
+      displayError(`Failed to imported ${warframeImportFailureCount} warframes.`)
     }
   })
   .catch((error) => {
