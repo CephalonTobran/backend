@@ -13,7 +13,7 @@ import { formatConsoleMessage } from "./lib/console_messages"
 
 dotenv.config()
 
-const argv = yargs
+yargs
   .scriptName("manager.ts")
   .env("MANAGER")
   .command(updateCommand)
