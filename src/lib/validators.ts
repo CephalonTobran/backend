@@ -98,14 +98,7 @@ export function validImage(image: string): string {
   if (matches(image, /[<>:"/\\|?*\x00-\x1F]/g)) return ""
 
   const fileExt = image.slice(((image.lastIndexOf(".") - 1) >>> 0) + 2)
-  if (
-    !(
-      fileExt === "png" ||
-      fileExt === "jpg" ||
-      fileExt === "jpeg" ||
-      fileExt === "gif"
-    )
-  )
+  if (!(fileExt === "png" || fileExt === "jpg" || fileExt === "jpeg" || fileExt === "gif"))
     return ""
 
   return image

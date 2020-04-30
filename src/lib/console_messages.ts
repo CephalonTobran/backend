@@ -8,12 +8,7 @@ const error = chalk.red
 /**
  * Types of console messages
  */
-export type ConsoleMessageTypes =
-  | "default"
-  | "info"
-  | "success"
-  | "warning"
-  | "error"
+export type ConsoleMessageTypes = "default" | "info" | "success" | "warning" | "error"
 
 /**
  * Format a string for console output

@@ -30,8 +30,7 @@ describe("string cleaner", () => {
   })
 
   it("throws an error if the result is required and is empty", () => {
-    const input =
-      '  <br /> <script src="invader.com/explode.js">explode()</script> \n'
+    const input = '  <br /> <script src="invader.com/explode.js">explode()</script> \n'
     expect(() => cleanString(input, "input", true)).toThrow()
   })
 })
