@@ -13,4 +13,12 @@
     "**/dist": true,
     "**/coverage": true
   },
+  "spellright.language": [
+    "en"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext"
+  ],
 }
