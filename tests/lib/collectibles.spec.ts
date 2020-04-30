@@ -75,7 +75,7 @@ describe("collectible object converter", () => {
       .not.toThrow("There was an uncaught error")
   })
 
-  it("category defaults to 'Other' if the category is not recognised", () => {
+  it("category defaults to 'Other' if the category is not recognized", () => {
     const input: Item = {
       uniqueName: "Test/Collectibles/Powersuits/Dummy",
       name: "Dummy",
