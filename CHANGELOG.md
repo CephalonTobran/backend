@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+### [0.3.4](https://github.com/CephalonTobran/backend/compare/v0.3.3...v0.3.4) (2020-05-01)
+
+
+### Bug Fixes
+
+* **packages:** Snyk fix for 1 vulnerability ([#24](https://github.com/CephalonTobran/backend/issues/24)) ([9197fa2](https://github.com/CephalonTobran/backend/commit/9197fa298f5239232b8afdfc9f2255841f272503))
+
 ### [0.3.3](https://github.com/CephalonTobran/backend/compare/v0.3.2...v0.3.3) (2020-04-28)
 
 

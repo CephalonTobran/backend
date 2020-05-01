@@ -1,6 +1,6 @@
 {
   "name": "cephalon-tobran-backend",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Manage the behind-the-scenes aspects of Cephalon Tobran.",
   "main": "\\src\\main.ts",
   "keywords": [
