@@ -40,11 +40,11 @@
     "jsdom": "^16.2.2",
     "lodash": "^4.17.15",
     "semver": "^7.3.2",
+    "snyk": "^1.319.1",
     "ts-node": "^8.10.1",
     "typescript": "^3.8.3",
     "validator": "^13.0.0",
-    "warframe-items": "^1.891.0",
-    "snyk": "^1.319.1"
+    "warframe-items": "^1.891.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
