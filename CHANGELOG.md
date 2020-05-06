@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+### [0.3.5](https://github.com/CephalonTobran/backend/compare/v0.3.4...v0.3.5) (2020-05-06)
+
+
+### Bug Fixes
+
+* **packages:** Snyk fix for 1 vulnerability ([#35](https://github.com/CephalonTobran/backend/issues/35)) ([fee4fa6](https://github.com/CephalonTobran/backend/commit/fee4fa60d0b555b9576fa50c1bdd3b0e5a6c7261))
+
+
+### Documentation
+
+* **readme:** rearange info; add and update badges ([#26](https://github.com/CephalonTobran/backend/issues/26)) ([ac42571](https://github.com/CephalonTobran/backend/commit/ac425711c87c4739f27f0224e33ec7c4a2c5bfac))
+
 ### [0.3.4](https://github.com/CephalonTobran/backend/compare/v0.3.3...v0.3.4) (2020-05-01)
 
 
