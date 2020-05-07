@@ -23,8 +23,7 @@
     "lint": "eslint \"**/*.{js,ts}\" --quiet --fix",
     "lint:ci": "eslint \"**/*.{js,ts}\" --color",
     "release": "semantic-release",
-    "snyk-protect": "snyk protect",
-    "prepare": "yarn run snyk-protect"
+    "snyk-protect": "snyk protect"
   },
   "dependencies": {
     "@firebase/app-types": "^0.6.0",
