@@ -71,7 +71,7 @@
     "jest-junit": "^10.0.0",
     "majestic": "^1.7.0",
     "prettier": "^2.0.5",
-    "semantic-release": "^17.0.7",
+    "semantic-release": "^17.2.3",
     "ts-jest": "^25.5.0"
   },
   "husky": {
